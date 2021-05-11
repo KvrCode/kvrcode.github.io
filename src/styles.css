@@ -32,6 +32,9 @@ html{
     font-weight: 700;
 }
 
+.sub-section-padding{
+    padding: 3rem 2rem;
+}
 .section-padding{
     padding: 4rem 2rem;
 }
@@ -46,6 +49,11 @@ html{
     margin: 8rem;
 } */
 
+.flex-row-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .flex-row-between{
     display: flex;
     align-items: center;
@@ -61,12 +69,14 @@ html{
 .button{
     outline: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
 
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    padding: 1rem;
+    padding: 1rem 1.5rem;
+
+    cursor: pointer;
 }
 .button-blue{
     background-color: #3c415c;
@@ -77,12 +87,17 @@ html{
     color: #f4f4f4;
 }
 
-.card{
+/* .card{
     padding: 1rem;
     height: 100%;
-}
+} */
 .card img{
     border-radius: 5px;
+}
+
+.fab,
+.fas{
+    font-size: 3rem;
 }
 
 /*
@@ -91,18 +106,22 @@ html{
 #header{
     position: sticky;
     top: 0;
+    box-shadow: 0px 3px 18px 0px rgba(0,0,0,0.1);
 }
 
-.hamburger{
-    width: 40px;
-    height: 40px;
+.brand a{
+    text-decoration: none;
+    color: #000;
 }
 
+nav{
+    display: none;
+}
 /*
     hero
 */
 #hero{
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
 }
@@ -119,6 +138,77 @@ html{
 /* #portfolio{
     text-align: center;
 } */
+/* .portfolio-card{
+    border: 1px solid black; */
+
 .portfolio-card{
-    border: 1px solid black;
+    margin-top: 6rem;
+}
+
+.portfolio-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.project-name{
+    margin: 1rem 0 0.25rem 0;
+}
+
+.project-desc{
+    text-align: left;
+}
+
+.buttons{
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+/*
+    about
+*/
+.about-text{
+    margin-top: 6rem;
+    text-align: left;
+
+    line-height: 2.25rem;
+}
+
+/*
+    contact
+*/
+.links{
+    margin-top: 6rem;
+}
+
+.email-svg{
+    height: 60px;
+    width: 60px;
+}
+
+/*
+    footer
+*/
+
+#footer{
+    box-shadow: 0px -3px 18px 0px rgba(0,0,0,0.1);
+}
+
+.scroll-to-top{
+    display: none; /*Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
 }
